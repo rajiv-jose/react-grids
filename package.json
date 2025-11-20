@@ -1,0 +1,9 @@
+{
+  "name": "react-grids",
+  "version": "1.0.0",
+  "description": "Static user grid showcase",
+  "license": "ISC",
+  "scripts": {
+    "start": "echo 'Open index.html in your browser to view the grid.'"
+  }
+}
