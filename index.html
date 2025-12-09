@@ -21,6 +21,45 @@
 
   <main>
     <section class="grid" id="user-grid" aria-label="User details"></section>
+
+    <section class="color-lab" aria-label="Color platelets playground">
+      <div>
+        <p class="eyebrow">Color studio</p>
+        <h2>Create gradient platelets</h2>
+        <p class="subtitle">
+          Explore every hue in a responsive HTML5 canvas, then generate curated platelets you can
+          copy for your own designs.
+        </p>
+      </div>
+
+      <div class="color-panel">
+        <div class="picker">
+          <canvas id="color-canvas" width="520" height="240" aria-label="Color gradient picker"></canvas>
+          <div class="picker-actions">
+            <label class="input-label" for="manual-color">Or select a color manually</label>
+            <input id="manual-color" type="color" value="#60a5fa" aria-label="Manual color input" />
+          </div>
+        </div>
+
+        <div class="color-readout" aria-live="polite">
+          <div class="swatch" id="active-swatch" aria-hidden="true"></div>
+          <div>
+            <p class="eyebrow">Active color</p>
+            <p class="color-value" id="hex-value">#60A5FA</p>
+            <p class="meta" id="rgb-value">rgb(96, 165, 250)</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <p class="eyebrow">Dynamic platelets</p>
+        <p class="subtitle">
+          Hover or tap any platelet to inspect it. The palette updates instantly when you pick a new
+          color from the gradient or manual input.
+        </p>
+        <div class="platelets" id="color-plates" aria-label="Color platelet grid"></div>
+      </div>
+    </section>
   </main>
 
   <script type="module" src="main.js"></script>
